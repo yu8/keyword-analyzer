@@ -8,20 +8,13 @@ file = './20130501.csv'
 
 data = CSV.read(file)
 
-#data.each do |data|
-#  puts data[0]
-#end
-
-
 mecab = MeCab::Tagger.new()
 
 n_data = Array.new
 
 i = 0
 data.each do |data|
-  #puts mecab.parse(data[0])
   
-  #n_data[i].push(mecab.parseToNode(data[0]))
   node = mecab.parseToNode(data[0])
   while node do
     n_data[i] = Array.new
