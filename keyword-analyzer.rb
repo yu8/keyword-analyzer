@@ -26,6 +26,9 @@ data.each do |data|
   end
 end
 
+
+#配列に格納されたか確認
+#mecabからのデータのパースに失敗
 puts n_data[0][0]
 puts n_data[0][1]
 puts n_data[0][2]
